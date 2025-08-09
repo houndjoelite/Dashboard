@@ -1,0 +1,212 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221 83% 58%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 58%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Couleurs APVJ personnalisées - Plus éclatantes et harmonieuses */
+    --apvj-blue: 221 88% 62%;
+    --apvj-blue-dark: 221 88% 35%;
+    --apvj-blue-light: 221 88% 85%;
+    --apvj-yellow: 45 98% 58%;
+    --apvj-yellow-dark: 45 98% 45%;
+    --apvj-yellow-light: 45 98% 88%;
+    --apvj-green: 142 75% 65%;
+    --apvj-green-dark: 142 75% 45%;
+    --apvj-green-light: 142 75% 88%;
+    --apvj-red: 14 96% 58%;
+    --apvj-red-dark: 14 96% 45%;
+    --apvj-cream: 45 35% 98%;
+    --apvj-orange: 25 95% 65%;
+    --apvj-purple: 260 85% 70%;
+    --apvj-pink: 320 85% 70%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 221 83% 58%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 221 83% 58%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+/* Animations personnalisées pour APVJ */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Gradients éclatants */
+  .gradient-blue-yellow {
+    background: linear-gradient(135deg, hsl(var(--apvj-blue)) 0%, hsl(var(--apvj-yellow)) 100%);
+  }
+
+  .gradient-green-blue {
+    background: linear-gradient(135deg, hsl(var(--apvj-green)) 0%, hsl(var(--apvj-blue)) 100%);
+  }
+
+  .gradient-alert {
+    background: linear-gradient(135deg, hsl(var(--apvj-red)) 0%, hsl(var(--apvj-orange)) 100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles pour les alertes et notifications */
+.alert-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.alert-high {
+  @apply text-white border-0;
+  background: hsl(var(--apvj-red));
+}
+
+.alert-medium {
+  @apply text-white border-0;
+  background: hsl(var(--apvj-yellow-dark));
+}
+
+.alert-low {
+  @apply text-white border-0;
+  background: hsl(var(--apvj-blue));
+}
+
+/* Focus states améliorés pour l'accessibilité */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  --tw-ring-color: hsl(var(--apvj-blue));
+}
+
+/* Styles pour les formulaires sécurisés */
+.secure-input {
+  border-color: hsl(var(--apvj-green));
+  --tw-ring-color: hsl(var(--apvj-green));
+}
+
+.secure-button {
+  background: hsl(var(--apvj-green));
+}
+
+.secure-button:hover {
+  background: hsl(var(--apvj-green-dark));
+}
