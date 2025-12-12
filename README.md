@@ -249,4 +249,4 @@ Pour toute question, problème technique ou demande de fonctionnalité :
 
 ---
 
-**Développé avec ❤️ par l'équipe APVJ**
+**Développé  par Jean Jacques HOUNDJO**
