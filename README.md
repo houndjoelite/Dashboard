@@ -11,9 +11,15 @@ Tableau de bord d'administration complet pour la gestion des alertes, le suivi d
 
 ## 📹 Démonstration
 
-🎬 **Vidéo de présentation disponible** : [Voir la démo](/Démo.mkv)
+### � Démonstration Vidéo
 
-Découvrez l'interface complète et les fonctionnalités en action !
+<video width="100%" controls>
+  <source src="https://github.com/houndjoelite/Dashboard/raw/main/public/Démo.mkv" type="video/x-matroska">
+  Votre navigateur ne supporte pas la lecture directe. 
+  <a href="https://github.com/houndjoelite/Dashboard/raw/main/public/Démo.mkv">Télécharger la vidéo</a>
+</video>
+
+> ℹ️ Si la vidéo ne se lit pas directement, vous pouvez la [télécharger ici](https://github.com/houndjoelite/Dashboard/raw/main/public/Démo.mkv).
 
 ---
 
