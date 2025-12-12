@@ -11,15 +11,11 @@ Tableau de bord d'administration complet pour la gestion des alertes, le suivi d
 
 ## 📹 Démonstration
 
-### � Démonstration Vidéo
+### 🎬 Vidéo de Présentation
 
-<video width="100%" controls>
-  <source src="https://github.com/houndjoelite/Dashboard/raw/main/public/Démo.mkv" type="video/x-matroska">
-  Votre navigateur ne supporte pas la lecture directe. 
-  <a href="https://github.com/houndjoelite/Dashboard/raw/main/public/Démo.mkv">Télécharger la vidéo</a>
-</video>
+[![Voir la démo vidéo](https://img.shields.io/badge/▶️_Regarder_la_Démo-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/14_MNsUn2EJ4rIeFdK6B_wxNowsbR8k-q/view)
 
-> ℹ️ Si la vidéo ne se lit pas directement, vous pouvez la [télécharger ici](https://github.com/houndjoelite/Dashboard/raw/main/public/Démo.mkv).
+> 💡 **Cliquez sur le bouton ci-dessus** pour visionner la démonstration complète du tableau de bord (80 MB - qualité HD)
 
 ---
 
@@ -248,10 +244,16 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 Pour toute question, problème technique ou demande de fonctionnalité :
 
-- 📧 **Email** : houndjojeanjacques82@gmail.com
-
-
+- 📧 **Email** : support@apvj.com
+- 💼 **Équipe technique** : tech@apvj.com
+- 📖 **Wiki interne** : [Documentation complète](https://wiki.apvj.com)
 
 ---
 
-**Développé avec ❤️ par Jean Jacques HOUNDJO**
+## 📄 Licence
+
+Ce projet est sous licence privée. Tous droits réservés © 2024 APVJ.
+
+---
+
+**Développé avec ❤️ par l'équipe APVJ**
