@@ -244,15 +244,8 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 Pour toute question, problème technique ou demande de fonctionnalité :
 
-- 📧 **Email** : support@apvj.com
-- 💼 **Équipe technique** : tech@apvj.com
-- 📖 **Wiki interne** : [Documentation complète](https://wiki.apvj.com)
+- 📧 **Email** : houndjojeanjacques82@gmail.com
 
----
-
-## 📄 Licence
-
-Ce projet est sous licence privée. Tous droits réservés © 2024 APVJ.
 
 ---
 
